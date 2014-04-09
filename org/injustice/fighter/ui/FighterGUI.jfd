@@ -1,0 +1,164 @@
+JFDML JFormDesigner: "5.1.0.2.64" Java: "1.7.0_09" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Fighter GUI"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblEat"
+						"text": "Eat at percent"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 45
+						"y": 0
+						"width": 70
+						"height": 25
+					} )
+					add( new FormComponent( "javax.swing.JSlider" ) {
+						name: "jsEat"
+						"majorTickSpacing": 10
+						"minimum": 30
+						"maximum": 80
+						"minorTickSpacing": 5
+						"paintLabels": true
+						"snapToTicks": true
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 0
+						"y": 25
+						"width": 155
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "cbAbilities"
+						"text": "Use Abilities"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 60
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblSpeed"
+						"text": "Mouse speed"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 175
+						"y": 5
+						"width": 70
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cmbSpeed"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "Very slow"
+							addElement( "Very slow" )
+							addElement( "Slow" )
+							addElement( "Default" )
+							addElement( "Fast" )
+							addElement( "Very fast" )
+						}
+						"selectedIndex": 2
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 175
+						"y": 20
+						"width": 75
+						"height": 30
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "cbSpins"
+						"text": "Claim spins"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 85
+						"height": 24
+						"x": 95
+						"y": 60
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblNote"
+						"text": "Have space in inventory"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 10
+						"y": 120
+						"width": 120
+						"height": 25
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "list2"
+							"visibleRowCount": 4
+							"model": new javax.swing.DefaultListModel {
+								addElement( "Adamant arrow" )
+								addElement( "Chaos rune" )
+								addElement( "Coal" )
+								addElement( "Cosmic rune" )
+								addElement( "Law rune" )
+								addElement( "Clue scroll (2)" )
+								addElement( "Mithril arrow" )
+								addElement( "Rune essence" )
+								addElement( "Top of sceptre" )
+							}
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 160
+						"y": 110
+						"width": 91
+						"height": 70
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox1"
+						"text": "Rejuvenate (60%)"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBox1ActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 70
+						"y": 85
+						"width": 130
+						"height": 25
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox2"
+						"text": "Pick charms"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 175
+						"y": 60
+						"width": 85
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "for loot/charms"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 30
+						"y": 140
+						"width": 80
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnStart"
+						"text": "Start!"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridwidth": 2
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 170, 55 )
+			"size": new java.awt.Dimension( 300, 270 )
+		} )
+	}
+}

@@ -1,0 +1,29 @@
+v0.1 - Alpha release
+v0.2 - Misc bug fixes, paint update
+v0.3 - Added more IDs, generalised Rock
+v0.4 - Updated framework, fixed GUI choice for Silver
+v0.5 - Limestone dropping update - Mousekeys if 28, actionbar with Timer if not
+v0.6 - Dropping fix, counts the selected rock now, not Inventory.
+v0.7 - Basic dynamic sig exp tracking begun
+v0.8 - Dynamic sig implemented!
+v0.9 - Granite support added, abandoned mine works, no radius setting, widget check, interaction fix
+       dynamic sig stat sending fix
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TODO - Preferences file,
+TODO - Rock click timer (don't interact when mining)
+TODO - help with web walking
+TODO - Secret runite code

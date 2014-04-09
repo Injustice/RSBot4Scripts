@@ -1,0 +1,239 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_03" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Injustice's Powerchopper GUI"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp tabbedPane1::l::288:x}"
+					"$verticalGroup": "par l {seq t {space :0:0:x, comp tabbedPane1:::p:226:p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "tabbedPane1"
+						auxiliary() {
+							"JavaCodeGenerator.variableName": "tabbedPane"
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq {space :::p, par l {comp rbBonfire::l:p::p, comp rbDrop::l:p::p, comp rbActiondrop::l:p::p}, space ::200:x}, seq l {space :10:10:p, par l:::p {comp chopBox:::::x, comp lblLogsToCut:::::x, comp lblWhatToDo:::::x}, space ::77:x, comp cbNests:::p::p, space :p:32:p}}"
+							"$verticalGroup": "par l {seq l {space :::p, par l {comp cbNests:::p::p, seq {comp lblLogsToCut:::p::p, space :::p, comp chopBox:::p::p, space s:::p, comp lblWhatToDo:::p::p, space u:::p, comp rbBonfire:::p::p, space :::p, comp rbDrop:::p::p, space :::p, comp rbActiondrop:::p::p}}, space ::33:x}}"
+						} ) {
+							name: "chopPane"
+							"preferredSize": new java.awt.Dimension( 300, 200 )
+							auxiliary() {
+								"JavaCodeGenerator.variableName": "chopPane"
+							}
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblLogsToCut"
+								"text": "Logs to cut"
+								"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+								auxiliary() {
+									"JavaCodeGenerator.variableName": "lblLogsToCut"
+								}
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "chopBox"
+								"model": new javax.swing.DefaultComboBoxModel {
+									selectedItem: "Normal"
+									addElement( "Normal" )
+									addElement( "Achey" )
+									addElement( "Oak" )
+									addElement( "Willow" )
+									addElement( "Maple" )
+									addElement( "Arctic Pine" )
+									addElement( "Eucalyptus" )
+									addElement( "Yew" )
+									addElement( "Ivy " )
+									addElement( "Magic" )
+								}
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblWhatToDo"
+								"text": "What to do"
+								"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+							} )
+							add( new FormComponent( "javax.swing.JRadioButton" ) {
+								name: "rbBonfire"
+								"text": "Bonfire"
+								"$buttonGroup": new FormReference( "rdbgLogs" )
+								auxiliary() {
+									"JavaCodeGenerator.variableName": "rbBonfire"
+								}
+							} )
+							add( new FormComponent( "javax.swing.JRadioButton" ) {
+								name: "rbDrop"
+								"text": "Drop"
+								"$buttonGroup": new FormReference( "rdbgLogs" )
+								auxiliary() {
+									"JavaCodeGenerator.variableName": "rbDrop"
+								}
+							} )
+							add( new FormComponent( "javax.swing.JRadioButton" ) {
+								name: "rbActiondrop"
+								"text": "Actiondrop"
+								"$buttonGroup": new FormReference( "rdbgLogs" )
+								auxiliary() {
+									"JavaCodeGenerator.variableName": "rbActiondrop"
+								}
+							} )
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "cbNests"
+								"text": "Pick Nests"
+								"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Chopping options"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq l {space :::p, par l {seq {space :21:21:p, comp lblPath:::::x}, seq {par l {comp cbScreenshots::l:p::p, par t:l::p {seq {comp cbShowPaint:::p::p, space :::x, comp cbShowMouse:::p::p}, seq {space :21:21:p, par l {comp rbSimplePaint:::p::p, comp rbSexyPaint:::p::p, comp lblFPS::l:p::p}}}}, space :0:0:x}}, space :::p}}"
+							"$verticalGroup": "par l {seq l {space :::p, par b {comp cbShowPaint::b:p::p, comp cbShowMouse::b:p::p}, space u:::p, comp rbSimplePaint:::p::p, space :::p, comp rbSexyPaint:::p::p, space :::p, comp lblFPS:::p::p, space :p:7:p, comp cbScreenshots:::p:20:p, space :::p, comp lblPath:::p:36:p, space ::32:x}}"
+						} ) {
+							name: "paintPane"
+							auxiliary() {
+								"JavaCodeGenerator.variableName": "paintPane"
+							}
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "cbShowPaint"
+								"text": "Show paint"
+								"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBox2ActionPerformed", true ) )
+							} )
+							add( new FormComponent( "javax.swing.JRadioButton" ) {
+								name: "rbSimplePaint"
+								"text": "Simple paint"
+								"$buttonGroup": new FormReference( "rdbgPaint" )
+								"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+							} )
+							add( new FormComponent( "javax.swing.JRadioButton" ) {
+								name: "rbSexyPaint"
+								"text": "Sexy paint"
+								"$buttonGroup": new FormReference( "rdbgPaint" )
+								"font": #SwingDerivedFont1
+							} )
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "cbScreenshots"
+								"text": "Take screenshots on stop"
+								"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblPath"
+								"text": "[YOUR USER]\\Appdata\\Local\\Temp\\Injustice's Powerchopper"
+								"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -2, false )
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblFPS"
+								"text": "Note: Use simple paint if your FPS is below 20"
+							} )
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "cbShowMouse"
+								"text": "Show mouse"
+								"font": #SwingDerivedFont0
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Paint options"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {comp jsAntiban::t::283:x, seq {par l {seq {space :::p, par l {comp cbAntiban:::p::p, seq l {space :p:19:p, comp lblFrequency:::p::p}}, space :0:183:x}, seq {space :p:24:p, comp label18::::249:x}}, space :::p}}"
+							"$verticalGroup": "par l {seq t {space :::p, comp cbAntiban:::p::p, space :p:19:p, comp lblFrequency:::p::p, space :::p, comp jsAntiban:::p::p, space u:::p, comp label18:::p::p, space ::54:x}}"
+						} ) {
+							name: "antibanPane"
+							add( new FormComponent( "javax.swing.JSlider" ) {
+								name: "jsAntiban"
+								"minorTickSpacing": 5
+								"majorTickSpacing": 25
+								"paintTicks": true
+								"snapToTicks": true
+								"paintLabels": true
+							} )
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "cbAntiban"
+								"text": "Antiban"
+								"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cbAntibanActionPerformed", true ) )
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblFrequency"
+								"text": "Frequency"
+								"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label18"
+								"text": "Note: Antiban will only occur when the player is idle"
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Antiban options"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq {space :::p, par l {comp lblMiscText::l::263:x, comp lblMiscText2::l::263:x, comp lblMiscText3::l::263:x}, space :::p}, seq {space :10:10:p, par l {comp lblScriptBy::l:p:206:p, comp lblIntro::l::263:x}, space :10:10:p}}"
+							"$verticalGroup": "par l {seq l {space :::p, comp lblIntro:::p:25:p, space u:::p, comp lblMiscText:::p:25:p, space :p:1:p, comp lblMiscText2:::p::p, space :::p, comp lblMiscText3::::16:x, space :p:40:p, comp lblScriptBy:::p:26:p, space :p:23:p}}"
+						} ) {
+							name: "miscPane"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblScriptBy"
+								"text": "Script by Injustice/Bartsome of PowerBot"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblIntro"
+								"text": "Welcome to Injustice's AIO Powerchopper. "
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblMiscText"
+								"text": "This script features bonfires, actiondropping, regular"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblMiscText2"
+								"text": "dropping, antiban, multiple paints and an easy to use"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblMiscText3"
+								"text": "GUI."
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Misc"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitle"
+					"text": "     Injustice's AIO Powerchopper"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 7, false )
+					auxiliary() {
+						"JavaCodeGenerator.variableName": "title"
+					}
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnStart"
+					"text": "Start"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnStartActionPerformed", true ) )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 320, 300 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "rdbgLogs"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 310 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "rdbgPaint"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 362 )
+		} )
+	}
+}
